@@ -61,12 +61,17 @@
 
 - (void)drawGridInRect:(NSRect)dirtyRect;
 {
-
+    [[NSColor lightGrayColor] setFill];
+    NSRectFill(self.bounds);
 }
 
 - (void)drawLegendInRect:(NSRect)dirtyRect;
 {
-
+    [[NSColor blackColor] setFill];
+    NSRect midline = self.bounds;
+    midline.size.height = 1.0f;
+    midline.origin.y = floorf(self.bounds.size.height / 2.0f);
+    NSRectFill(midline);
 }
 
 - (void)oldDrawRect:(NSRect)dirtyRect;
