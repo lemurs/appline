@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3383" systemVersion="12E55" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="DailySalesReport" representedClassName="NLSalesReport" parentEntity="SalesReport" syncable="YES"/>
+    <entity name="MonthlySalesReport" representedClassName="NLSalesReport" parentEntity="SalesReport" syncable="YES"/>
+    <entity name="SalesReport" representedClassName="NLSalesReport" isAbstract="YES" syncable="YES">
+        <attribute name="appleIdentifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="beginDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currencyOfProceeds" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="customerCurrency" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="customerPrice" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="developer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="developerProceeds" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="parentIdentifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="period" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productTypeIdentifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="promoCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="provider" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="providerCountry" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="report" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sku" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subscription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="units" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="WeeklySalesReport" representedClassName="NLSalesReport" parentEntity="SalesReport" syncable="YES"/>
+    <entity name="YearlySalesReport" representedClassName="NLSalesReport" parentEntity="SalesReport" syncable="YES"/>
+    <elements>
+        <element name="DailySalesReport" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="MonthlySalesReport" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="SalesReport" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="WeeklySalesReport" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="YearlySalesReport" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>
